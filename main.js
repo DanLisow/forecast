@@ -7,7 +7,7 @@ let title = document.querySelector('.container h1');
 
 
 btn.onclick = () => {
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=${API_KEY}&lang=ru`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value.replace(/\s/g, '')}&appid=${API_KEY}&lang=ru`)
         .then((resp) => {
             if (resp.status == 404) {
                 input.value = '';
