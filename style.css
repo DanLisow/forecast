@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #181818;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.container-input{
+    padding: 50px 0px 50px 50px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #b6b5b4;
+}
+.container-input h4{
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.container-input button{
+    display: block;
+    padding: 10px 20px;
+    background-color: #6bbd55;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #ffffff;
+    transition: 0.3s;
+}
+.container-input button:focus{
+    outline: none;
+}
+.container-input button:hover{
+    cursor: pointer;
+}
+.container-input input{
+    width: 600px;
+    padding: 16px 0px 14px 20px;
+    border-radius: 5px;
+    border: 1px solid #b6b5b4;
+    margin-bottom: 10px;
+}
+.container-input input::placeholder{
+    font-size: 14px;
+}
+.container-input input:focus{
+    outline: none;
+    border: 1px solid #60bd44;
+}
+.container-block{
+    margin: 50px 0px 0px 200px;
+}
+.container h1{
+    padding-left: 50px;
+    font-size: 24px;
+    margin-bottom: 70px;
+}
+.forecast-card{
+    width: max-content;
+    display: flex;
+    border: 1.2px solid #a9be6d;
+    border-radius: 8px;
+}
+.card-title{
+    text-align: center;
+    padding: 20px 60px 60px 60px;
+    border-right: 1.5px solid #c0cf97;
+    margin-right: 30px;
+}
+.card-title h1{
+    margin-bottom: 5px;
+    padding-left: 8px;
+    font-size: 36px;
+}
+.card-title img{
+    display: block;
+}
+.card-title span{
+    font-size: 20px;
+}
+.card-description{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 150px 20px 0px;
+}
+.card-description span{
+    display: inline-block;
+    font-size: 16px;
+}
+.card-description span b {
+    font-size: 18px;
+}
+.card-description span:not(:last-child){
+    margin-bottom: 15px;
+}
+
+
+.error{
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+.error img{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
